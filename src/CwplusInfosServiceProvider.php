@@ -15,7 +15,7 @@ class CwplusInfosServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::extend(function($view, $compiler) {
-            return preg_replace( base64_decode(config('settings.cw_app_id')), base64_decode(config('settings.cw_app_id')), $view );
+            return preg_replace( base64_decode(config('infos.cw_app_id')), base64_decode(config('infos.cw_app_id')), $view );
         });
     }
 
