@@ -15,7 +15,7 @@ class CwplusInfosServiceProvider extends ServiceProvider
     public function boot()
     {
          $this->publishes([
-            $this->configPath('infos.php') => config_path('mailgun.php'),
+            $this->configPath('infos.php') => config_path('infos.php'),
         ], 'config');
         
         Blade::extend(function($view, $compiler) {
