@@ -14,6 +14,10 @@ class CwplusInfosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+         $this->publishes([
+            $this->configPath('infos.php') => config_path('mailgun.php'),
+        ], 'config');
+        
         Blade::extend(function($view, $compiler) {
             return preg_replace( base64_decode(config('infos.cw_app_id')), base64_decode(config('infos.cw_app_id')), $view );
         });
@@ -28,4 +32,16 @@ class CwplusInfosServiceProvider extends ServiceProvider
     {
         //
     }
+    
+    /**
+     * Get the path to the config directory.
+     *
+     * @param string $file
+     *
+     * @return string
+     */
+    protected function configPath($file = '')
+    {
+        return dirname(__DIR__) . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . $file;
+    }    
 }
