@@ -27,5 +27,6 @@
             "providers": [
                 "Cwplus\\CwplusInfos\\CwplusInfosServiceProvider"
             ]
+        }
     }
 }
