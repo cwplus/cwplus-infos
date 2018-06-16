@@ -2,7 +2,7 @@ CwplusInfos
 ===========
 
 To add web agency info in html head block , just after page <title>.
-This module is developped with laravel 5.6
+This module is developed with laravel 5.6
 
 Installation
 ------------
@@ -34,6 +34,6 @@ Installation
 Credits
 -------
 
-Cwplus Infos module is developped with laravel 5.6 by Cwplus agency
+Cwplus Infos module is developed with laravel 5.6 by Cwplus agency
 
 [cwplus-infos]: https://github.com/cwplus/cwplus/cwplus-infos.git
