@@ -21,5 +21,11 @@
     "psr-4": {
       "Cwplus\\CwplusInfos\\": "src/"
     }
-  }
+  },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cwplus\\CwplusInfos\\CwplusInfosServiceProvider"
+            ]
+}
 }
