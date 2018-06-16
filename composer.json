@@ -1,0 +1,25 @@
+{
+  "name": "cwplus/cwplus-infos",
+  "description": "To add cwplus infos in hedar app",
+  "homepage": "http://github.com/cwplus/cwplus-infos",
+  "license": "MIT",
+  "version": "1.0.0-dev",
+  "minimum-stability": "beta",
+  "authors": [
+    {
+        "name": "El Hakym Khalid",
+        "email": "khalid.elhakym@gmail.com",
+        "homepage": "http://www.creationwebplus.be/",
+        "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "illuminate/support": "~5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cwplus\\CwplusInfos\\": "src/"
+    }
+  }
+}
