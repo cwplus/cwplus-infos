@@ -16,13 +16,18 @@ Installation
     }
     ```
 
-2. Now tell composer to download MvlabsSnappy by running the command:
+2. Now tell composer to download cwplus-infos by running the command:
 
     ```bash
     $ php composer.phar update
     ```
 
-     
+3. Next, publish the config file with the following artisan command. 
+  
+    ```bash
+    $ php artisan vendor:publish --provider="Cwplus\CwplusInfos\CwplusInfosServiceProvider" --tag="config"
+    ```
+
 
 
 
