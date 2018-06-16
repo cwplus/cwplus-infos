@@ -14,13 +14,22 @@ class CwplusInfosServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-         $this->publishes([
-            $this->configPath('infos.php') => config_path('infos.php'),
-        ], 'config');
+         $this->registerConfig()
         
         Blade::extend(function($view, $compiler) {
             return preg_replace( base64_decode(config('infos.cw_app_id')), base64_decode(config('infos.cw_app_id')), $view );
         });
+    }
+    
+    protected function registerConfig()
+    {
+         $this->publishes([
+            $this->configPath('infos.php') => config_path('infos.php'),
+        ], 'config');
+        
+        $this->mergeConfigFrom(
+             $this->configPath('infos.php'), 'infos'
+        );
     }
 
     /**
