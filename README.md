@@ -12,7 +12,7 @@ Installation
 
     ```json
     "require": {
-        "cwplus/cwplus-infos": "dev-master"
+        "cwplus/cwplus-infos": "1.0"
     }
     ```
 
